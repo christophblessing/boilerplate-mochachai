@@ -152,7 +152,7 @@ suite('Unit Tests', function(){
     /** 15 - #match Asserts that the actual value **/
     // matches the second argument regular expression.
     test('#match, #notMatch', function() {
-      var regex =  /^#\sname\:\s[\w\s]+,\sage\:\s\d+\s?$/;
+      var regex =  /^#\sname:\s[\w\s]+,\sage:\s\d+\s?$/;
       assert.match(formatPeople('John Doe', 35), regex);
       assert.notMatch(formatPeople('Paul Smith III', 'twenty-four'), regex);
     });
